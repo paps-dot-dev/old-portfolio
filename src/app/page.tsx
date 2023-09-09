@@ -6,11 +6,11 @@ import mobileHeadShot from '../../public/IMG_2593.png'
 
 const pageTitles = [
   {
-    name: 'Code',
+    name: 'Web Dev',
     slug: '/code',
   },
-  { name: 'UI/UX', slug: '/design' },
-  { name: 'Audio', slug: '/audio' },
+  { name: 'Web Design', slug: '/design' },
+  { name: 'Audio', slug: 'http://www.deadwingrecordings.com' },
   { name: 'Photography', slug: '/photography' },
 ]
 
@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main>
       <Image
-        className='md:hidden mt-[64px] w-[50vw] mr-2 ml-auto rounded-lg '
+        className='md:hidden mt-[64px] mr-2 ml-auto opacity-80 '
         src={mobileHeadShot}
         alt='Headshot of Shawn "Paps" Papineau, Web Dev and Designer'
       />
@@ -39,7 +39,10 @@ export default function Home() {
           alt='Headshot of Shawn "Paps" Papineau, Web Dev and Designer'
         />
       </div>
-      <footer className='p-4 text-center'>Copyright Shawn Papineau 2023</footer>
+
+      <footer className='p-4 text-center bg-slate-400'>
+        Copyright Shawn Papineau 2023
+      </footer>
     </main>
   )
 }
